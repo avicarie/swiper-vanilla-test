@@ -1,0 +1,52 @@
+
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+h1{
+    color: forestgreen;
+    text-align: center;
+    margin: 30px 0 50px;
+}
+
+.gallery {
+    margin: 10px 50px;
+}
+
+.gallery img {
+    width: 230px;
+    padding: 5px;
+}
+
+.pop-up-image{
+    position: fixed;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.pop-up-image span{
+    position: absolute;
+    top:0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: inherit;
+}
+
+.pop-up-image img {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 80vh;
+    object-fit: cover;
+}
