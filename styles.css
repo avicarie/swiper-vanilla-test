@@ -21,6 +21,7 @@ h1{
 
 .pop-up-image{
     position: fixed;
+    /* display: none; */
     top:0;
     left: 0;
     background: rgba(0,0,0,0.9);
@@ -29,7 +30,7 @@ h1{
     z-index: 100;
 }
 
-.pop-up-image span{
+.pop-up-image .close-popup{
     position: absolute;
     top:0;
     right: 10px;

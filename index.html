@@ -1,22 +1,39 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <title>Test popup gallery</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1 id="test">Gallery</h1>
-            <div class="gallery">
-                <img src="qop.jpg" alt="queen of pain portrait" />
-                <img src="valeera.jpg" alt="valeera sanguinar" />
-                <img src="white-dragon.jpg" alt="white dragon d&d" />
-            </div>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css" />
+    <title>Test popup gallery</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="test">Gallery</h1>
+      <div class="gallery">
+        <img src="assets/qop.jpg" alt="queen of pain portrait" />
+        <img src="assets/valeera.jpg" alt="valeera sanguinar" />
+        <img src="assets/white-dragon.jpg" alt="white dragon d&d" />
+      </div>
 
-            <div class="pop-up-image">
-                <span>&times;</span>
-                <img src="qop.jpg" alt="" />
+      <div class="pop-up-image">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/qop.jpg" alt="queen of pain portrait" />
             </div>
+            <div class="swiper-slide">
+              <img src="assets/valeera.jpg" alt="valeera sanguinar" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/white-dragon.jpg" alt="white dragon d&d" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-    </body>
-    <script src="gallery.js"></script>
+        <span class="close-popup">&times;</span>
+      </div>
+    </div>
+  </body>
+  <script src="lib/swiper/swiper.min.js"></script>
+  <script src="gallery.js"></script>
 </html>
